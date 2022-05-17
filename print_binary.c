@@ -16,6 +16,11 @@ int print_binary(unsigned int num)
 		chars_printed += _putchar('0');
 		return (chars_printed);
 	}
+	if (num == 1)
+	{
+		chars_printed += _putchar('1');
+		return (chars_printed);
+	}
 	while (num > 0)
 	{
 		bin[idx] = '0' + (num % 2);
